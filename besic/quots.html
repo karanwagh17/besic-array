@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#view
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top: 50%;
+color: aliceblue;
+font-size: 25px;
+}
+body{
+    background-color: black
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+    <div class="main">
+    <div id="view">
+        "If at first you don’t succeed, try, try again. W. E. Hickson"
+    </div>
+   
+</div>
+<script>
+     let quetes= [
+       " Life is what happens when you're busy making other plans ",
+       "Get busy living or get busy dying"
+       ,"You only live once, but if you do it right, once is enough",
+  
+
+     ];
+    function change()
+    {
+        let view= document.getElementById('view')
+        let velue=Math.floor(Math.random()*quetes.length);
+        view.innerHTML=quetes[velue]
+    }
+  
+    setInterval(change,1000)
+    
+    </script>
+</body>
+</html>
+

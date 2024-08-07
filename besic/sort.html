@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function findsort(value)
+        {
+            return value.sort((a , b) => a.age - b.age)
+        }
+        let employee = [
+            {
+                name :"johnn",
+                age  : 30
+            },
+            {
+                name :"alex",
+                age : 18
+            },
+            {
+                name :"raj",
+                age : 15    
+            },
+            {
+                name :"karan",
+                age : 25
+            },
+        ]
+        console.log(findsort(employee));
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

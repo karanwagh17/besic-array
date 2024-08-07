@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: black;
+            color: rgb(227, 227, 227);
+            font-size: 150px;
+          
+        }
+        .main{
+            /* position: absolute; */
+            transform: translate(-50%,-50%);
+            left: 50%;
+            position: relative;
+              
+        }
+        
+.box
+{
+    height: 300px; 
+    width: 70%;
+    background: rgba(245, 248, 248, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(219, 119, 119, 0.2);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    position: absolute;
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 50%;
+    bottom: 80%; 
+    z-index: 1;     
+}
+span{
+    position: relative;
+    left: 9%;
+    top: 20%;
+}
+       
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span id="hrs">00</span>
+        <span>:</span>
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+    </div>
+
+    <script>
+        let hours = document.getElementById('hrs');
+        let minutes = document.getElementById('min');
+        let seconds = document.getElementById('sec');
+
+       
+        setInterval(() =>{
+        let currentTime = new Date();
+        hours = currentTime.getHours();
+        document.getElementById('hrs').innerHTML = hours;
+        minutes = currentTime.getMinutes();
+        document.getElementById('min').innerHTML = minutes;
+        seconds = currentTime.getSeconds();
+        document.getElementById('sec').innerHTML = seconds;
+        seconds = currentTime.getMinutes
+
+
+     
+        
+        
+
+        }, 1000);
+    
+    </script>
+</body>
+</html>
